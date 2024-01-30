@@ -59,6 +59,14 @@ body{
     /* gradient */
 }
 
+#section2{
+    padding: 0px 20px;
+    width: 100%; 
+    min-height: 80vh;
+    overflow: hidden;
+    /* gradient */
+}
+
 #name{
     font-size: 60px;
     font-weight: 600;
@@ -136,6 +144,29 @@ svg{
     color: rgb(214, 200, 0);
 }
 
+
+.imgcard{
+    background-color: #ffffff;
+    height: 45vh;
+    border-radius: 0px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.imgcard img{
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+}
+
+#large{
+    font-size: 60px;
+}
+
+
+
 @media screen and (max-width: 768px){
     .nav img{
         margin-left: 20px;
@@ -206,4 +237,17 @@ svg{
         width: 100%;
     }
 
+    .imgcard{
+        height: 25vh;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .imgcard img{
+        border-radius: 5px;
+    }
+
+    #large{
+        font-size: 20px;
+    }
 }
