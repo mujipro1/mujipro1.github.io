@@ -1,17 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@1000&family=Raleway&display=swap');
 
 body{
-    background-color: #213439;
+    background-color: #5a5a5b;
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
+:root{
+    --primary-color: #213439;
+    --secondary-color: #ffffff;
+    --accent-color:rgb(210, 214, 241);
+}
+
+.lines{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    opacity: .2;
+    object-fit: contain;
+}
+
+.lines img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lines2{
+    width: 102%;
+    position: absolute;
+    opacity: .15;
+    top: -160px;
+    left: -10px;
+    object-fit: contain;
+}
+
+.line-cont1{
+    position: relative;
+}
+
+.lines2 img{
+    width: 100%;
+    height: 100%;
+    /* flip  */
+    transform: scale(-1, 1);
+    object-fit: cover;
+}
+
 .footBtn{
     background-color:#0000005e;
-    color: rgb(214, 200, 0);
-    fill: rgb(214, 200, 0);
+    color: var(--accent-color);
+    fill: var(--accent-color);
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -22,7 +62,7 @@ body{
 
 .footBtn:hover{
     opacity: 1;
-    background-color:   rgb(214, 200, 0);
+    background-color:   var(--accent-color);
     color: #000000;
     svg{
         fill: #000000;
@@ -30,10 +70,14 @@ body{
 }
 
 .gradient{
-    background: linear-gradient(30deg,rgb(18, 25, 30),  rgb(57, 79, 81));
+    background: linear-gradient(30deg,rgb(73, 4, 48),  rgb(1, 51, 82));   
 }
 .gradient2{
-    background: linear-gradient(150deg,rgb(18, 25, 30),  rgb(57,79, 81));
+    background: linear-gradient(150deg,rgb(73, 4, 48),  rgb(1, 51, 82));
+    /* background: linear-gradient(150deg,rgb(18, 25, 30),  rgb(57,79, 81)); */
+}
+.padd{
+    padding-top: 150px!important;
 }
 .nav{
     height: 80px;
@@ -74,7 +118,7 @@ body{
 
 .bg-text{
     color: #000000;
-    background-color: rgb(214, 200, 0);
+    background-color: var(--accent-color);
     border-radius: 3px;
     min-width: 10px;
     padding: 0px 5px;
@@ -82,7 +126,7 @@ body{
 
 .bg-text2{
     color: #000000;
-    background-color: rgb(214, 200, 0);
+    background-color: var(--accent-color);
     border-radius: 3px;
     min-width: 10px;
     padding: 0px 10px;
@@ -113,7 +157,7 @@ svg{
 }
 
 .card:hover{
-    background-color: rgb(214, 200, 0);
+    background-color: var(--accent-color);
     color: #000000;
     svg{
         fill: #000000;
@@ -140,8 +184,8 @@ svg{
     margin-bottom: 40px;
 }
 .fillYellow{
-    fill:rgb(214, 200, 0);
-    color: rgb(214, 200, 0);
+    fill:var(--accent-color);
+    color: var(--accent-color);
 }
 
 
